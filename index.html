@@ -3,40 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabel di HTML</title>
+    <title>Form Login</title>
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <th rowspan="2" bgcolor="yellow">Bulan</th>
-            <th colspan="2" bgcolor="#00ff80">Hasil Panen</th>
-            <!-- rowspan adalah merge kolom 1 dan 2, colspan adalah merge baris 1 dan 2-->
-        </tr>
-        <tr>
-            <th>Padi</th>
-            <th>Kacang</th>
-        </tr>
-        <tr>
-            <td>Januari</td>
-            <td>500 Kg</td>
-            <td>231 Kg</td>
-        </tr>
-        <tr>
-            <td>Februari</td>
-            <td>342 Kg</td>
-            <td>423 Kg</td>
-        </tr>
-        <tr>
-            <td>Maret</td>
-            <td>432 Kg</td>
-            <td>124 Kg</td>
-        </tr>
-        <tr>
-            <td>April</td>
-            <td>453 Kg</td>
-            <td>523 Kg</td>
-        </tr>
-    </table>
-    
+    <form action="login.php" method="POST">
+        <fieldset>
+            <!-- fieldset untuk membuat garis kotak -->
+            <legend>Login</legend>
+            <p>
+                <label>Username:</label>
+                <input type="text" name="username" placeholder="" />
+                <!--  label untuk nama form -->
+                <!-- input, name dan placeholder adalah form yang kosong -->
+            </p>
+            <p>
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="">
+            </p>
+            <p>
+                <label><input type="checkbox" name="remember" value="remember" /> Remember me</label>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Login" />
+            </p>
+        </fieldset>
+    </form>
 </body>
 </html>
