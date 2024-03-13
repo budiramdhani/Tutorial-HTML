@@ -6,25 +6,37 @@
     <title>Tabel di HTML</title>
 </head>
 <body>
-    <h1>Tabel di HTML</h1>
-    
-    <table border="1" cellpading="10">
-        <!-- border 1 adalah ukuran garis, cellpading adalah ukuran jarak antara teks sel dengan garis -->
+    <table border="1">
         <tr>
-            <td bgcolor="yellow">Baris 1 kolom 1</td>
-            <!-- bgcolor untuk memberikan warna pada seet -->
-            <td>Baris 1 kolom 2</td>            
+            <th rowspan="2" bgcolor="yellow">Bulan</th>
+            <th colspan="2" bgcolor="#00ff80">Hasil Panen</th>
+            <!-- rowspan adalah merge kolom 1 dan 2, colspan adalah merge baris 1 dan 2-->
         </tr>
-        <tr bgcolor="#00ff80">
-            <td>Baris 2 kolom 1</td>
-            <td>Baris 2 kolom 2</td>
+        <tr>
+            <th>Padi</th>
+            <th>Kacang</th>
+        </tr>
+        <tr>
+            <td>Januari</td>
+            <td>500 Kg</td>
+            <td>231 Kg</td>
+        </tr>
+        <tr>
+            <td>Februari</td>
+            <td>342 Kg</td>
+            <td>423 Kg</td>
+        </tr>
+        <tr>
+            <td>Maret</td>
+            <td>432 Kg</td>
+            <td>124 Kg</td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td>453 Kg</td>
+            <td>523 Kg</td>
         </tr>
     </table>
-    <!-- <table> untuk membungkus tabelnya
-        <thead> untuk membungkus bagian kepala
-        <tbody> untuk membungkus bagian body dari tabel
-        <tr> (tabel row) untuk membuat baris
-        <td> (tabel data) untuk membuat sel
-        <th> (tabel head) untuk membuat judul pada header -->
+    
 </body>
 </html>
