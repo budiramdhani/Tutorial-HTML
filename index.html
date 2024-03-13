@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Login</title>
+    <title>Contact us</title>
 </head>
 <body>
-    <form action="login.php" method="POST">
+    <form action="contact.php" method="POST">
+        <!-- membuat form -->
         <fieldset>
-            <!-- fieldset untuk membuat garis kotak -->
-            <legend>Login</legend>
+               <!-- garis kotak pada form -->
+            <legend>Contact</legend>
             <p>
-                <label>Username:</label>
-                <input type="text" name="username" placeholder="" />
-                <!--  label untuk nama form -->
-                <!-- input, name dan placeholder adalah form yang kosong -->
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="">
             </p>
             <p>
-                <label>Password:</label>
-                <input type="password" name="password" placeholder="">
+                <label>Subject:</label>
+                <input type="text" name="subject" placeholder="">
             </p>
             <p>
-                <label><input type="checkbox" name="remember" value="remember" /> Remember me</label>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="">
             </p>
             <p>
-                <input type="submit" name="submit" value="Login" />
+                <input type="submit" name="submit" value="Send">
             </p>
         </fieldset>
     </form>
