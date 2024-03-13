@@ -3,28 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+    <title>Registrasi</title>
 </head>
 <body>
     <form action="contact.php" method="POST">
-        <!-- membuat form -->
         <fieldset>
-               <!-- garis kotak pada form -->
-            <legend>Contact</legend>
+            <legend>Registrasi</legend>
             <p>
-                <label>Name:</label>
-                <input type="text" name="name" placeholder="">
+                <label>Nama:</label>
+                <input type="text" name="nama" placeholder="">
             </p>
             <p>
-                <label>Subject:</label>
-                <input type="text" name="subject" placeholder="">
+                <label>Username:</label>
+                <input type="text" name="username" placeholder="">
             </p>
             <p>
                 <label>Email:</label>
                 <input type="email" name="email" placeholder="">
             </p>
             <p>
-                <input type="submit" name="submit" value="Send">
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="">
+            </p>
+            <p>
+                <label>Jenis Kelamin:</label>
+                <label><input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan</label>
+                <!-- type input radio merupakan ceklist bulat -->
+            </p>
+            <p>
+                <label>Agama:</label>
+                <select name="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                </select>
+            </p>
+            <p>
+                <label>Biografi:</label>
+                <textarea name="Biografi"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Daftar">
             </p>
         </fieldset>
     </form>
