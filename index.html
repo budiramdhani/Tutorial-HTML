@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discription List di HTML</title>
+    <title>Tabel di HTML</title>
 </head>
 <body>
-    <h1>Daftar Istilah</h1>
-    <dl>
-        <dt>Kopi</dt>
-        <dd>Sebuah minuman hitam. Menurut pendapat lain kopi adalah air yang dimasak sampai gosong</dd>
-        <dt>Kopi Black Magic</dt>
-        <dd>Kopi Hitam atau kopi tradisional yang dibuat dengan mantra</dd>
-        <dt>White Kopi</dt>
-        <dd>Kopi berwarna putih, kandungan kafeinnya sedikit</dd>
-    </dl>
-    <!-- description list adalah list yang berisi deskripsi penjelasan dari sesuatu -->
+    <h1>Tabel di HTML</h1>
+    
+    <table border="1" cellpading="10">
+        <!-- border 1 adalah ukuran garis, cellpading adalah ukuran jarak antara teks sel dengan garis -->
+        <tr>
+            <td bgcolor="yellow">Baris 1 kolom 1</td>
+            <!-- bgcolor untuk memberikan warna pada seet -->
+            <td>Baris 1 kolom 2</td>            
+        </tr>
+        <tr bgcolor="#00ff80">
+            <td>Baris 2 kolom 1</td>
+            <td>Baris 2 kolom 2</td>
+        </tr>
+    </table>
+    <!-- <table> untuk membungkus tabelnya
+        <thead> untuk membungkus bagian kepala
+        <tbody> untuk membungkus bagian body dari tabel
+        <tr> (tabel row) untuk membuat baris
+        <td> (tabel data) untuk membuat sel
+        <th> (tabel head) untuk membuat judul pada header -->
 </body>
 </html>
